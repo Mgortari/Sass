@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Ubuntu:wght@300;400&display=swap');
+
+$fonts1: 32px;
+$fontf1: cursive;
+$fontf2: 'kalam';
+$fontf3: 'Ubuntu';
+
+$text1: uppercase;
+$text2: lowercase;
+$text3: capitalize;
+
+$color1: rgb(243, 160, 6);
+$color2: rgb(16, 74, 160);
+
+.navbar {
+    width: 100%;
+
+    a {
+        font-size: $fonts1;
+        font-family: $fontf1;
+        color: $color1;
+        font-family: $fontf2;
+        text-shadow: 2px 2px 7px black;
+    }
+
+    a:hover {
+        color: #721a8d;
+    }
+}
+
+.nav-item {
+    border-left: 1px solid black;
+}
+
+.socialn a {
+    padding: 5px;
+    font-size: 20px;
+    color: $color2;
+    text-shadow: 2px 3px 7px black;
+}
+
+.carousel img {
+    width: auto;
+    background-size: contain;
+    height: 550px;
+}
+
+section {
+    font-family: $fontf3;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+
+    h1 {
+        text-transform: $text1;
+        font-size: 45px;
+        color: #f7f5f8;
+    }
+
+    p {
+        text-transform: $text2;
+        font-size: 29px;
+        color: #f7f5f8;
+    }
+}
+
+.agenda {
+    margin-top: 4px;
+    background-image: url(./Multimedia/agenda.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 90px;
+}
+
+.ciudad {
+    margin-top: 4px;
+    height: 400px;
+    background-image: url(./Multimedia/ciudad.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 90px;
+}
+
+.banner {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(12, 26, 218);
+    color: rgb(215, 224, 241);
+    text-align: center;
+    font-size: 60px;
+    text-transform: $text1;
+}
+
+.guia {
+    margin-top: 4px;
+    padding: 25px;
+    height: 350px;
+    width: auto;
+    color: rgb(245, 234, 234);
+    background-image: url(./Multimedia/guia.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-family: $fontf3;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+
+    h1 {
+        font-size: 45px;
+        text-transform: $text1;
+    }
+
+    p {
+        font-size: 39px;
+        text-transform: $text3;
+    }
+}
+
+.guia2 {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: auto;
+    height: 450px;
+    color: $color1;
+    background-image: url(./Multimedia/naturaleza.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 70px;
+    font-family: $fontf3;
+    text-transform: $text1;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+
+    h1 {
+        font-size: 75px;
+        font-family: $fontf2;
+    }
+
+    p {
+        font-size: 39px;
+    }
+}
+
+footer {
+    height: 130px;
+    width: 100%;
+    background-color: rgb(17, 75, 150);
+}
+
+.row {
+    margin-right: 1px;
+}
+
+.texto {
+    display: flex;
+    padding: 25px;
+    color: aliceblue;
+    font-family: $fontf3;
+    text-transform: $text3;
+
+    p {
+        padding: 7px;
+        border-left: 1px solid black;
+    }
+}
+
+.logo {
+    margin-left: 150px;
+    padding: 10px;
+    font-size: 35px;
+    width: auto;
+    font-family: $fontf2;
+    color: $color1;
+}
+
+.socialf {
+    padding: 10px;
+    font-size: 20px;
+    letter-spacing: 15px;
+    margin-top: 5px;
+    color: rgb(238, 238, 240);
+    text-shadow: 2px 3px 7px black;
+    display: flex;
+}
+
+.arrow {
+    padding: 10px;
+    height: auto;
+    width: auto;
+    font-size: 30px;
+    border-radius: 100%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 25px;
+    right: 35px;
+    box-shadow: 1px 1px 1px 2px #424444;
+
+    a {
+        color: aliceblue;
+    }
+
+    a:hover {
+        color: $color1;
+    }
+}
+
+$padding: 50px;
+$height: 800px;
+$align: center;
+
+.dormir {
+    background: linear-gradient(45grad, rgb(2, 2, 20), rgb(83, 130, 202));
+}
+
+.card0 {
+    width: 350px;
+    height: $height - 380px;
+    margin: 17px;
+    font-family: $fontf3;
+    text-align: $align;
+    padding: $padding*2;
+    background-image: url(./Multimedia/hotel.jpg);
+    background-size: cover;
+    border-radius: 50px;
+    color: #e1e6e6;
+    box-shadow: 2px 2px 2px rgb(43, 42, 42);
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px 2px black;
+        transform: translateY(-50px);
+        transition: 1s;
+    }
+}
+
+.card1 {
+    width: 350px;
+    height: $height - 380px;
+    margin: 17px;
+    font-family: $fontf3;
+    text-align: $align;
+    padding: $padding*2;
+    background-image: url(./Multimedia/hotel1.jpg);
+    background-size: cover;
+    border-radius: 50px;
+    color: #e1e6e6;
+    box-shadow: 2px 2px 2px rgb(43, 42, 42);
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px 2px black;
+        transform: translateY(-50px);
+        transition: 1s;
+    }
+}
+
+.card2 {
+    width: 350px;
+    height: $height - 380px;
+    margin: 27px;
+    font-family: $fontf3;
+    text-align: $align;
+    padding: $padding*2;
+    background-image: url(./Multimedia/hotel2.jpg);
+    background-size: cover;
+    background-position: $align;
+    border-radius: 50px;
+    color: #e1e6e6;
+    box-shadow: 2px 2px 2px rgb(43, 42, 42);
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px 2px black;
+        transform: translateY(-50px);
+        transition: 1s;
+    }
+}
+
+.card3 {
+    width: 350px;
+    height: $height - 380px;
+    margin: 27px;
+    font-family: $fontf3;
+    text-align: $align;
+    padding: $padding*2;
+    background-image: url(./Multimedia/hotel3.jpg);
+    background-size: cover;
+    background-position: $align;
+    border-radius: 50px;
+    color: #e1e6e6;
+    box-shadow: 2px 2px 2px rgb(43, 42, 42);
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px 2px black;
+        transform: translateY(-50px);
+        transition: 1s;
+    }
+}
+
+.card4 {
+    width: 350px;
+    height: $height - 380px;
+    margin: 27px;
+    font-family: $fontf3;
+    text-align: $align;
+    padding: $padding*2;
+    background-image: url(./Multimedia/hotel4.jpg);
+    background-size: cover;
+    background-position: $align;
+    border-radius: 50px;
+    color: #e1e6e6;
+    box-shadow: 2px 2px 2px rgb(43, 42, 42);
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px 2px black;
+        transform: translateY(-50px);
+        transition: 1s;
+    }
+}
+
+.card5 {
+    width: 350px;
+    height: $height - 380px;
+    margin: 27px;
+    font-family: $fontf3;
+    text-align: $align;
+    padding: $padding*2;
+    background-image: url(./Multimedia/hotel5.jpg);
+    background-size: cover;
+    background-position: $align;
+    border-radius: 50px;
+    color: #e1e6e6;
+    box-shadow: 2px 2px 2px rgb(43, 42, 42);
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px 2px black;
+        transform: translateY(-50px);
+        transition: 1s;
+    }
+}
+
+.card-body a {
+    color: white;
+    background-color: #777171;
+    border-radius: 20px;
+    margin-top: 10px;
+    text-transform: $text1;
+}
+
+article {
+    padding: $padding - 30px;
+    text-align: $align;
+    font-family: $fontf3;
+    text-transform: $text1;
+    font-size: 27px;
+    width: auto;
+    color: white;
+    text-shadow: 3px 3px 7px rgb(240, 235, 235);
+}
+
+.planifica {
+    background-color: $color1;
+    padding: $padding;
+    margin: 7px;
+    height: $height - 610px;
+    width: 310px;
+    position: relative;
+    border-radius: 100px;
+    text-align: $align;
+    box-shadow: 5px 5px 5px black;
+
+    &:hover {
+        cursor: pointer;
+        transform: rotateY(380grad);
+        transition: 2s;
+    }
+}
+
+.agencia {
+    background-color: $color1;
+    padding: $padding - 10px;
+    margin: 7px;
+    height: $height - 610px;
+    width: 310px;
+    position: relative;
+    border-radius: 100px;
+    text-align: $align;
+    box-shadow: 5px 5px 5px black;
+
+    &:hover {
+        cursor: pointer;
+        transform: rotateY(380grad);
+        transition: 2s;
+    }
+}
+
+.actividades {
+    background-color: $color1;
+    padding: $padding;
+    margin: 7px;
+    height: $height - 610px;
+    width: 310px;
+    position: relative;
+    border-radius: 100px;
+    text-align: $align;
+    box-shadow: 5px 5px 5px black;
+
+    &:hover {
+        cursor: pointer;
+        transform: rotateY(380grad);
+        transition: 2s;
+    }
+}
+
+.circuitos {
+    background-color: $color1;
+    padding: $padding;
+    margin: 7px;
+    height: $height - 610px;
+    width: 310px;
+    position: relative;
+    border-radius: 100px;
+    text-align: $align;
+    box-shadow: 5px 5px 5px black;
+
+    &:hover {
+        cursor: pointer;
+        transform: rotateY(380grad);
+        transition: 2s;
+    }
+}
